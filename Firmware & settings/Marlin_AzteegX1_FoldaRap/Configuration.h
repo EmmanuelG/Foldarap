@@ -179,7 +179,7 @@ const bool Z_ENDSTOPS_INVERTING = false; // set to true to invert the logic of t
 #define max_software_endstops true  //If true, axis won't move to coordinates greater than the defined lengths below.
 #define X_MAX_LENGTH 145
 #define Y_MAX_LENGTH 145
-#define Z_MAX_LENGTH 145
+#define Z_MAX_LENGTH 155
 
 // The position of the homing switches. Use MAX_LENGTH * -0.5 if the center should be 0, 0, 0
 #define X_HOME_POS 0
