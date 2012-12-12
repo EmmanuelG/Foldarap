@@ -192,7 +192,7 @@ const bool Z_ENDSTOPS_INVERTING = false; // set to true to invert the logic of t
 
 // default settings 
 
-#define DEFAULT_AXIS_STEPS_PER_UNIT   {80, 80, 3200, 1200}  // FoldaRap
+#define DEFAULT_AXIS_STEPS_PER_UNIT   {80, 80, 3200, 1200}  // FoldaRap // Z-step-mm = 3200 for M6 // 4000 for M5
 #define DEFAULT_MAX_FEEDRATE          {500, 500, 5, 45}    // (mm/sec)    
 #define DEFAULT_MAX_ACCELERATION      {1500,1500,50,250}    // X, Y, Z, E maximum start speed for accelerated moves. E default values are good for skeinforge 40+, for older versions raise them a lot.
 
