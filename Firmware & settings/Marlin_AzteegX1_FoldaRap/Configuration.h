@@ -166,8 +166,8 @@ const bool Z_ENDSTOPS_INVERTING = false; // set to true to invert the logic of t
 #define INVERT_Y_DIR false    // for Mendel set to true, for Orca set to false
 #define INVERT_Z_DIR true     // for Mendel set to false, for Orca set to true
 #define INVERT_E0_DIR true   // false for Nema14 and true for PG35L-038
-#define INVERT_E1_DIR false    // for direct drive extruder v9 set to true, for geared extruder set to false
-#define INVERT_E2_DIR false   // for direct drive extruder v9 set to true, for geared extruder set to false
+#define INVERT_E1_DIR false   // for direct drive extruder set to true, for geared extruder set to false
+#define INVERT_E2_DIR false   // for direct drive extruder set to true, for geared extruder set to false
 
 // ENDSTOP SETTINGS:
 // Sets direction of endstops when homing; 1=MAX, -1=MIN
