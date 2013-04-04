@@ -78,7 +78,7 @@
 #define TEMP_SENSOR_0 1
 //#define TEMP_SENSOR_1 0
 //#define TEMP_SENSOR_2 0
-#define TEMP_SENSOR_BED 1
+//#define TEMP_SENSOR_BED 1
 
 // Actual temperature must be close to target for this long before M109 returns success
 #define TEMP_RESIDENCY_TIME 10	// (seconds)
@@ -91,7 +91,7 @@
 #define HEATER_0_MINTEMP 5
 //#define HEATER_1_MINTEMP 5
 //#define HEATER_2_MINTEMP 5
-#define BED_MINTEMP 5
+//#define BED_MINTEMP 5
 
 // When temperature exceeds max temp, your heater will be switched off.
 // This feature exists to protect your hotend from overheating accidentally, but *NOT* from thermistor short/failure!
@@ -99,7 +99,7 @@
 #define HEATER_0_MAXTEMP 275
 //#define HEATER_1_MAXTEMP 275
 //#define HEATER_2_MAXTEMP 275
-#define BED_MAXTEMP 150
+//#define BED_MAXTEMP 150
 
 // If your bed has low resistance e.g. .6 ohm and throws the fuse you can duty cycle it to reduce the
 // average current. The value should be an integer and the heat bed will be turned on for 1 interval of
@@ -261,7 +261,7 @@ const bool Z_ENDSTOPS_INVERTING = false; // set to true to invert the logic of t
 
 // default settings 
 
-#define DEFAULT_AXIS_STEPS_PER_UNIT   {80.4,80.5,4000,140}  // FoldaRap direct drive Nema14, M5 leadscrew
+#define DEFAULT_AXIS_STEPS_PER_UNIT   {80,80,4000,140}  // FoldaRap direct drive Nema14, M5 leadscrew
 #define DEFAULT_MAX_FEEDRATE          {400, 400, 3, 50}    // (mm/sec)
 #define DEFAULT_MAX_ACCELERATION      {6000,6000,40,10200}    // X, Y, Z, E maximum start speed for accelerated moves. E default values are good for skeinforge 40+, for older versions raise them a lot.
 
