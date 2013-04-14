@@ -220,7 +220,7 @@ const bool Z_ENDSTOPS_INVERTING = false; // set to true to invert the logic of t
 #define DISABLE_E false // For all extruders
 
 #define INVERT_X_DIR false    // false for FoldaRap
-#define INVERT_Y_DIR false     // true for FoldaRap
+#define INVERT_Y_DIR true     // true for FoldaRap
 #define INVERT_Z_DIR false    // false for FoldaRap
 #define INVERT_E0_DIR false   // false for direct drive Nema14, true for PG35L-038
 #define INVERT_E1_DIR false   //
