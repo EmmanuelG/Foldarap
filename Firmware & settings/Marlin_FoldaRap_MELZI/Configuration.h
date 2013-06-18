@@ -78,7 +78,7 @@
 #define TEMP_SENSOR_0 1
 //#define TEMP_SENSOR_1 0
 //#define TEMP_SENSOR_2 0
-//#define TEMP_SENSOR_BED 1
+#define TEMP_SENSOR_BED 1
 
 // Actual temperature must be close to target for this long before M109 returns success
 #define TEMP_RESIDENCY_TIME 10	// (seconds)
@@ -91,7 +91,7 @@
 #define HEATER_0_MINTEMP 5
 //#define HEATER_1_MINTEMP 5
 //#define HEATER_2_MINTEMP 5
-//#define BED_MINTEMP 5
+#define BED_MINTEMP 5
 
 // When temperature exceeds max temp, your heater will be switched off.
 // This feature exists to protect your hotend from overheating accidentally, but *NOT* from thermistor short/failure!
@@ -99,7 +99,7 @@
 #define HEATER_0_MAXTEMP 275
 //#define HEATER_1_MAXTEMP 275
 //#define HEATER_2_MAXTEMP 275
-//#define BED_MAXTEMP 150
+#define BED_MAXTEMP 150
 
 // If your bed has low resistance e.g. .6 ohm and throws the fuse you can duty cycle it to reduce the
 // average current. The value should be an integer and the heat bed will be turned on for 1 interval of
@@ -219,10 +219,10 @@ const bool Z_ENDSTOPS_INVERTING = false; // set to true to invert the logic of t
 #define DISABLE_Z true
 #define DISABLE_E false // For all extruders
 
-#define INVERT_X_DIR true    // false for FoldaRap
-#define INVERT_Y_DIR false     // true for FoldaRap
-#define INVERT_Z_DIR true    // false for FoldaRap
-#define INVERT_E0_DIR true   // false for direct drive Nema14, true for PG35L-038
+#define INVERT_X_DIR true    // true for FoldaRap
+#define INVERT_Y_DIR false     // false for FoldaRap
+#define INVERT_Z_DIR true    // true for FoldaRap
+#define INVERT_E0_DIR true   // true for direct drive Nema14
 #define INVERT_E1_DIR false   //
 #define INVERT_E2_DIR false   //
 
@@ -239,7 +239,7 @@ const bool Z_ENDSTOPS_INVERTING = false; // set to true to invert the logic of t
 #define X_MIN_POS 0
 #define Y_MAX_POS 145
 #define Y_MIN_POS 0
-#define Z_MAX_POS 150
+#define Z_MAX_POS 145
 #define Z_MIN_POS 0
 
 #define X_MAX_LENGTH (X_MAX_POS - X_MIN_POS)
