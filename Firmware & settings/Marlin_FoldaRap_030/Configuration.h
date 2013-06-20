@@ -220,7 +220,7 @@ const bool Z_ENDSTOPS_INVERTING = false; // set to true to invert the logic of t
 #define DISABLE_E false // For all extruders
 
 #define INVERT_X_DIR true    // false for FoldaRap
-#define INVERT_Y_DIR false     // true for FoldaRap
+#define INVERT_Y_DIR true     // true for FoldaRap
 #define INVERT_Z_DIR true    // false for FoldaRap
 #define INVERT_E0_DIR true   // false for direct drive Nema14, true for PG35L-038
 #define INVERT_E1_DIR false   //
@@ -263,7 +263,7 @@ const bool Z_ENDSTOPS_INVERTING = false; // set to true to invert the logic of t
 
 #define DEFAULT_AXIS_STEPS_PER_UNIT   {80.4,80.5,4000,140}  // FoldaRap direct drive Nema14, M5 leadscrew
 #define DEFAULT_MAX_FEEDRATE          {400, 400, 3, 50}    // (mm/sec)
-#define DEFAULT_MAX_ACCELERATION      {6000,6000,40,10200}    // X, Y, Z, E maximum start speed for accelerated moves. E default values are good for skeinforge 40+, for older versions raise them a lot.
+#define DEFAULT_MAX_ACCELERATION      {5000,5000,40,10200}    // X, Y, Z, E maximum start speed for accelerated moves. E default values are good for skeinforge 40+, for older versions raise them a lot.
 
 #define DEFAULT_ACCELERATION          3000    // X, Y, Z and E max acceleration in mm/s^2 for printing moves 
 #define DEFAULT_RETRACT_ACCELERATION  10200   // X, Y, Z and E max acceleration in mm/s^2 for r retracts
