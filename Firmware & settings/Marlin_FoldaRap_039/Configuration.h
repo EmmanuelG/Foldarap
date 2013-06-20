@@ -261,17 +261,17 @@ const bool Z_ENDSTOPS_INVERTING = false; // set to true to invert the logic of t
 
 // default settings 
 
-#define DEFAULT_AXIS_STEPS_PER_UNIT   {80,80,4000,1200}  // FoldaRap // Z-step-mm = 3200 for M6 // 4000 for M5
-#define DEFAULT_MAX_FEEDRATE          {500, 500, 5, 45}    // (mm/sec)
-#define DEFAULT_MAX_ACCELERATION      {1500,1500,50,200}    // X, Y, Z, E maximum start speed for accelerated moves. E default values are good for skeinforge 40+, for older versions raise them a lot.
+#define DEFAULT_AXIS_STEPS_PER_UNIT   {80.2,80.2,4000,140}  // FoldaRap direct drive nema14 M5 leadscrew
+#define DEFAULT_MAX_FEEDRATE          {500, 500, 5, 50}    // (mm/sec)
+#define DEFAULT_MAX_ACCELERATION      {9000,9000,50,10200}    // X, Y, Z, E maximum start speed for accelerated moves. E default values are good for skeinforge 40+, for older versions raise them a lot.
 
-#define DEFAULT_ACCELERATION          1200    // X, Y, Z and E max acceleration in mm/s^2 for printing moves 
-#define DEFAULT_RETRACT_ACCELERATION  1200   // X, Y, Z and E max acceleration in mm/s^2 for r retracts
+#define DEFAULT_ACCELERATION          3000    // X, Y, Z and E max acceleration in mm/s^2 for printing moves 
+#define DEFAULT_RETRACT_ACCELERATION  10200   // X, Y, Z and E max acceleration in mm/s^2 for r retracts
 
 // 
 #define DEFAULT_XYJERK                24.0    // (mm/sec)
 #define DEFAULT_ZJERK                 0.4     // (mm/sec)
-#define DEFAULT_EJERK                 1.0    // (mm/sec) 1 for PG35L 10 for Nema14
+#define DEFAULT_EJERK                 10.0    // (mm/sec) 1 for PG35L 10 for Nema14
 
 //===========================================================================
 //=============================Additional Features===========================
