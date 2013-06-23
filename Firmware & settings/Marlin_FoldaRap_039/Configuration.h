@@ -115,13 +115,13 @@
   //#define PID_OPENLOOP 1 // Puts PID in open loop. M104/M140 sets the output power from 0 to PID_MAX
   #define PID_FUNCTIONAL_RANGE 10 // If the temperature difference between the target temperature and the actual temperature
                                   // is more then PID_FUNCTIONAL_RANGE then the PID will be shut off and the heater will be set to min/max.
-  #define PID_INTEGRAL_DRIVE_MAX 255  //limit for the integral term
+  #define PID_INTEGRAL_DRIVE_MAX 125  //limit for the integral term
   #define K1 0.95 //smoothing factor withing the PID
   #define PID_dT ((16.0 * 8.0)/(F_CPU / 64.0 / 256.0)) //sampling period of the temperature routine
 
-// RepRapPro Huxley
-  #define  DEFAULT_Kp 3.0
-  #define  DEFAULT_Ki (2*PID_dT)
+// RepRapPro Hotend
+  #define  DEFAULT_Kp 12.0 // 3.0
+  #define  DEFAULT_Ki (2.2*PID_dT) // 2
   #define  DEFAULT_Kd (80/PID_dT)
 
 #endif // PIDTEMP
@@ -169,7 +169,7 @@
 //if PREVENT_DANGEROUS_EXTRUDE is on, you can still disable (uncomment) very long bits of extrusion separately.
 #define PREVENT_LENGTHY_EXTRUDE
 
-#define EXTRUDE_MINTEMP 170
+#define EXTRUDE_MINTEMP 160
 #define EXTRUDE_MAXLENGTH (X_MAX_LENGTH+Y_MAX_LENGTH) //prevent extrusion of very large distances.
 
 //===========================================================================
@@ -222,7 +222,7 @@ const bool Z_ENDSTOPS_INVERTING = false; // set to true to invert the logic of t
 #define INVERT_X_DIR true    // true for FoldaRap
 #define INVERT_Y_DIR false     // false for FoldaRap
 #define INVERT_Z_DIR true    // true for FoldaRap
-#define INVERT_E0_DIR true   // false for direct drive Nema14, true for PG35L-038
+#define INVERT_E0_DIR false   // true for direct drive / false for geared
 #define INVERT_E1_DIR false   //
 #define INVERT_E2_DIR false   //
 
@@ -261,7 +261,7 @@ const bool Z_ENDSTOPS_INVERTING = false; // set to true to invert the logic of t
 
 // default settings 
 
-#define DEFAULT_AXIS_STEPS_PER_UNIT   {80.2,80.2,4000,140}  // FoldaRap direct drive nema14 M5 leadscrew
+#define DEFAULT_AXIS_STEPS_PER_UNIT   {80.2,80.2,4000,660}  // 140 direct drive / 660 geared
 #define DEFAULT_MAX_FEEDRATE          {500, 500, 5, 50}    // (mm/sec)
 #define DEFAULT_MAX_ACCELERATION      {9000,9000,50,10200}    // X, Y, Z, E maximum start speed for accelerated moves. E default values are good for skeinforge 40+, for older versions raise them a lot.
 
@@ -271,7 +271,7 @@ const bool Z_ENDSTOPS_INVERTING = false; // set to true to invert the logic of t
 // 
 #define DEFAULT_XYJERK                24.0    // (mm/sec)
 #define DEFAULT_ZJERK                 0.4     // (mm/sec)
-#define DEFAULT_EJERK                 10.0    // (mm/sec) 1 for PG35L 10 for Nema14
+#define DEFAULT_EJERK                 15.0    // (mm/sec) 1 for PG35L 10 for Nema14
 
 //===========================================================================
 //=============================Additional Features===========================
