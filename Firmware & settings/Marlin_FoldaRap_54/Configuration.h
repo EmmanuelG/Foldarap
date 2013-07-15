@@ -261,15 +261,15 @@ const bool Z_ENDSTOPS_INVERTING = false; // set to true to invert the logic of t
 
 // default settings 
 
-#define DEFAULT_AXIS_STEPS_PER_UNIT   {80.2,80.2,4000,660}  // FoldaRap direct drive Nema14, M5 leadscrew (3200 M6 / 1200 PG35L / 660 miniextruder)
+#define DEFAULT_AXIS_STEPS_PER_UNIT   {80.3,80.3,4000,660}  // FoldaRap direct drive Nema14, M5 leadscrew (3200 M6 / 1200 PG35L / 660 miniextruder)
 #define DEFAULT_MAX_FEEDRATE          {500, 500, 3, 50}    // (mm/sec)
 #define DEFAULT_MAX_ACCELERATION      {9000,9000,40,12000}    // X, Y, Z, E maximum start speed for accelerated moves.
 
-#define DEFAULT_ACCELERATION          6000    // X, Y, Z and E max acceleration in mm/s^2 for printing moves 
+#define DEFAULT_ACCELERATION          9000    // X, Y, Z and E max acceleration in mm/s^2 for printing moves 
 #define DEFAULT_RETRACT_ACCELERATION  12000   // X, Y, Z and E max acceleration in mm/s^2 for r retracts
 
 // 
-#define DEFAULT_XYJERK                25.0    // (mm/sec)
+#define DEFAULT_XYJERK                30.0    // (mm/sec)
 #define DEFAULT_ZJERK                 0.4     // (mm/sec)
 #define DEFAULT_EJERK                 15.0    // (mm/sec)
 
