@@ -133,7 +133,7 @@
 // 52 is 200k thermistor - ATC Semitec 204GT-2 (1k pullup)
 // 55 is 100k thermistor - ATC Semitec 104GT-2 (Used in ParCan) (1k pullup)
 
-#define TEMP_SENSOR_0 0
+#define TEMP_SENSOR_0 1
 #define TEMP_SENSOR_1 0
 #define TEMP_SENSOR_2 0
 #define TEMP_SENSOR_BED 0
@@ -287,13 +287,13 @@ const bool Z_ENDSTOPS_INVERTING = true; // set to true to invert the logic of th
 // Disables axis when it's not being used.
 #define DISABLE_X false
 #define DISABLE_Y false
-#define DISABLE_Z false
+#define DISABLE_Z true
 #define DISABLE_E false // For all extruders
 
 #define INVERT_X_DIR false    // 
-#define INVERT_Y_DIR false    // 
+#define INVERT_Y_DIR true    // 
 #define INVERT_Z_DIR false     // 
-#define INVERT_E0_DIR true   // 
+#define INVERT_E0_DIR false   // 
 #define INVERT_E1_DIR false    // 
 #define INVERT_E2_DIR false   // 
 
@@ -334,9 +334,9 @@ const bool Z_ENDSTOPS_INVERTING = true; // set to true to invert the logic of th
 
 // default settings
 
-#define DEFAULT_AXIS_STEPS_PER_UNIT   {160, 160, 8000, 280}  // 
-#define DEFAULT_MAX_FEEDRATE          {400, 400, 5, 50}    // (mm/sec)
-#define DEFAULT_MAX_ACCELERATION      {6000, 6000, 50, 10000}    // X, Y, Z, E maximum start speed for accelerated moves. E default values are good for skeinforge 40+, for older versions raise them a lot.
+#define DEFAULT_AXIS_STEPS_PER_UNIT   {161, 161, 8000, 280}  // 
+#define DEFAULT_MAX_FEEDRATE          {400, 400, 2, 50}    // (mm/sec)
+#define DEFAULT_MAX_ACCELERATION      {6000, 6000, 40, 10000}    // X, Y, Z, E maximum start speed for accelerated moves. E default values are good for skeinforge 40+, for older versions raise them a lot.
 
 #define DEFAULT_ACCELERATION          1500    // X, Y, Z and E max acceleration in mm/s^2 for printing moves
 #define DEFAULT_RETRACT_ACCELERATION  3000   // X, Y, Z and E max acceleration in mm/s^2 for retracts
