@@ -12,7 +12,7 @@
 
 pi=3.1415926535897932384626433832795;
 innerRadius=0;//shaft radius, in mm
-borders=3;//how thick should the borders around the central "shaft" be, in mm
+borders=3.1;//how thick should the borders around the central "shaft" be, in mm
 diametralPitch=12;
 numberOfTeeth=20;
 pressureAngle=20*pi/180;
