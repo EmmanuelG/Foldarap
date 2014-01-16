@@ -119,10 +119,10 @@
   #define K1 0.95 //smoothing factor withing the PID
   #define PID_dT ((16.0 * 8.0)/(F_CPU / 64.0 / 256.0)) //sampling period of the temperature routine
 
-// RepRapPro Huxley
-  #define  DEFAULT_Kp 3.0
-  #define  DEFAULT_Ki (2*PID_dT)
-  #define  DEFAULT_Kd (80/PID_dT)
+// FoldaRap
+  #define  DEFAULT_Kp 63
+  #define  DEFAULT_Ki 10
+  #define  DEFAULT_Kd 101
 
 #endif // PIDTEMP
 
@@ -271,7 +271,7 @@ const bool Z_ENDSTOPS_INVERTING = false; // set to true to invert the logic of t
 // 
 #define DEFAULT_XYJERK                20.0    // (mm/sec)
 #define DEFAULT_ZJERK                 0.4     // (mm/sec)
-#define DEFAULT_EJERK                 10.0    // (mm/sec)
+#define DEFAULT_EJERK                 5.0    // (mm/sec)
 
 //===========================================================================
 //=============================Additional Features===========================

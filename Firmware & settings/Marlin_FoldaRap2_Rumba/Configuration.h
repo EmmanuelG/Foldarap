@@ -168,11 +168,18 @@
   #define K1 0.95 //smoothing factor within the PID
   #define PID_dT ((16.0 * 8.0)/(F_CPU / 64.0 / 256.0)) //sampling period of the temperature routine
 
+//PID autotune = M303 Sxxx
+// If you are using a preconfigured hotend then you can use one of the value sets by uncommenting it
+// FoldaRap
+  #define  DEFAULT_Kp 93.34
+  #define  DEFAULT_Ki 15.48
+  #define  DEFAULT_Kd 140.70
+
 // If you are using a preconfigured hotend then you can use one of the value sets by uncommenting it
 // RepRapPro Huxley
-  #define  DEFAULT_Kp 3.0
-  #define  DEFAULT_Ki (2*PID_dT)
-  #define  DEFAULT_Kd (80/PID_dT)
+//  #define  DEFAULT_Kp 3.0
+//  #define  DEFAULT_Ki (2*PID_dT)
+//  #define  DEFAULT_Kd (80/PID_dT)
 
 #endif // PIDTEMP
 
@@ -369,7 +376,7 @@ const bool Z_MAX_ENDSTOP_INVERTING = false; // set to true to invert the logic o
 
 // default settings
 
-#define DEFAULT_AXIS_STEPS_PER_UNIT   {80.6, 80.3, 4000, 140}  // 
+#define DEFAULT_AXIS_STEPS_PER_UNIT   {80.8, 80.4, 4000, 140}  // 
 #define DEFAULT_MAX_FEEDRATE          {400, 400, 3, 40}    // (mm/sec)
 #define DEFAULT_MAX_ACCELERATION      {6000,6000,100,10000}    // X, Y, Z, E maximum start speed for accelerated moves. E default values are good for skeinforge 40+, for older versions raise them a lot.
 
