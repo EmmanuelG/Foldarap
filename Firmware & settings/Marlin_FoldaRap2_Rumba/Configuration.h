@@ -287,7 +287,7 @@ const bool Z_MAX_ENDSTOP_INVERTING = false; // set to true to invert the logic o
 #define DISABLE_Z true
 #define DISABLE_E false // For all extruders
 
-#define INVERT_X_DIR true    // 
+#define INVERT_X_DIR false    // true for belt - false for rack & pinion
 #define INVERT_Y_DIR true    // 
 #define INVERT_Z_DIR true     // 
 #define INVERT_E0_DIR true   // for direct drive extruder v9 set to true, for geared extruder set to false
@@ -376,7 +376,7 @@ const bool Z_MAX_ENDSTOP_INVERTING = false; // set to true to invert the logic o
 
 // default settings
 
-#define DEFAULT_AXIS_STEPS_PER_UNIT   {80.8, 80.4, 4000, 140}  // 
+#define DEFAULT_AXIS_STEPS_PER_UNIT   {76.4, 80.4, 4000, 140}  // 
 #define DEFAULT_MAX_FEEDRATE          {400, 400, 3, 40}    // (mm/sec)
 #define DEFAULT_MAX_ACCELERATION      {6000,6000,100,10000}    // X, Y, Z, E maximum start speed for accelerated moves. E default values are good for skeinforge 40+, for older versions raise them a lot.
 
