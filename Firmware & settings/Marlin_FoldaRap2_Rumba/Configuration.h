@@ -242,12 +242,12 @@
 
 #ifndef ENDSTOPPULLUPS
   // fine Enstop settings: Individual Pullups. will be ignored if ENDSTOPPULLUPS is defined
-  // #define ENDSTOPPULLUP_XMAX
-  // #define ENDSTOPPULLUP_YMAX
-  // #define ENDSTOPPULLUP_ZMAX
-  // #define ENDSTOPPULLUP_XMIN
-  // #define ENDSTOPPULLUP_YMIN
-  // #define ENDSTOPPULLUP_ZMIN
+  //#define ENDSTOPPULLUP_XMAX
+  //#define ENDSTOPPULLUP_YMAX
+  //#define ENDSTOPPULLUP_ZMAX
+  //#define ENDSTOPPULLUP_XMIN
+  //#define ENDSTOPPULLUP_YMIN
+  //#define ENDSTOPPULLUP_ZMIN
 #endif
 
 #ifdef ENDSTOPPULLUPS
@@ -268,7 +268,7 @@ const bool Y_MAX_ENDSTOP_INVERTING = false; // set to true to invert the logic o
 const bool Z_MAX_ENDSTOP_INVERTING = false; // set to true to invert the logic of the endstop.
 
 #define DISABLE_MAX_ENDSTOPS
-#define DISABLE_MIN_ENDSTOPS
+//#define DISABLE_MIN_ENDSTOPS
 
 // Disable max endstops for compatibility with endstop checking routine
 #if defined(COREXY) && !defined(DISABLE_MAX_ENDSTOPS)
@@ -287,7 +287,7 @@ const bool Z_MAX_ENDSTOP_INVERTING = false; // set to true to invert the logic o
 #define DISABLE_Z true
 #define DISABLE_E false // For all extruders
 
-#define INVERT_X_DIR false    // true for belt - false for rack & pinion
+#define INVERT_X_DIR true    // true for belt - false for rack & pinion
 #define INVERT_Y_DIR true    // 
 #define INVERT_Z_DIR true     // 
 #define INVERT_E0_DIR true   // for direct drive extruder v9 set to true, for geared extruder set to false
@@ -300,15 +300,15 @@ const bool Z_MAX_ENDSTOP_INVERTING = false; // set to true to invert the logic o
 #define Y_HOME_DIR -1
 #define Z_HOME_DIR -1
 
-#define min_software_endstops false // If true, axis won't move to coordinates less than HOME_POS.
-#define max_software_endstops false  // If true, axis won't move to coordinates greater than the defined lengths below.
+#define min_software_endstops true // If true, axis won't move to coordinates less than HOME_POS.
+#define max_software_endstops true  // If true, axis won't move to coordinates greater than the defined lengths below.
 
 // Travel limits after homing
-#define X_MAX_POS 140
+#define X_MAX_POS 150
 #define X_MIN_POS 0
-#define Y_MAX_POS 140
+#define Y_MAX_POS 150
 #define Y_MIN_POS 0
-#define Z_MAX_POS 140
+#define Z_MAX_POS 150
 #define Z_MIN_POS 0
 
 #define X_MAX_LENGTH (X_MAX_POS - X_MIN_POS)
@@ -376,7 +376,7 @@ const bool Z_MAX_ENDSTOP_INVERTING = false; // set to true to invert the logic o
 
 // default settings
 
-#define DEFAULT_AXIS_STEPS_PER_UNIT   {76.4, 80.4, 4000, 140}  // 
+#define DEFAULT_AXIS_STEPS_PER_UNIT   {80.5, 80.4, 4000, 140}  // 
 #define DEFAULT_MAX_FEEDRATE          {400, 400, 3, 40}    // (mm/sec)
 #define DEFAULT_MAX_ACCELERATION      {6000,6000,100,10000}    // X, Y, Z, E maximum start speed for accelerated moves. E default values are good for skeinforge 40+, for older versions raise them a lot.
 
@@ -390,7 +390,7 @@ const bool Z_MAX_ENDSTOP_INVERTING = false; // set to true to invert the logic o
 // #define EXTRUDER_OFFSET_Y {0.0, 5.00}  // (in mm) for each extruder, offset of the hotend on the Y axis
 
 // The speed change that does not require acceleration (i.e. the software might assume it can be done instantaneously)
-#define DEFAULT_XYJERK                20.0    // (mm/sec)
+#define DEFAULT_XYJERK                10.0    // (mm/sec)
 #define DEFAULT_ZJERK                 0.4     // (mm/sec)
 #define DEFAULT_EJERK                 5.0    // (mm/sec)
 
