@@ -133,7 +133,7 @@
 // 52 is 200k thermistor - ATC Semitec 204GT-2 (1k pullup)
 // 55 is 100k thermistor - ATC Semitec 104GT-2 (Used in ParCan) (1k pullup)
 
-#define TEMP_SENSOR_0 1
+#define TEMP_SENSOR_0 7
 #define TEMP_SENSOR_1 0
 #define TEMP_SENSOR_2 0
 #define TEMP_SENSOR_BED 1
@@ -185,9 +185,9 @@
 //PID autotune = M303 Sxxx
 // If you are using a preconfigured hotend then you can use one of the value sets by uncommenting it
 // FoldaRap
-  #define  DEFAULT_Kp 19.25
-  #define  DEFAULT_Ki 1.90
-  #define  DEFAULT_Kd 48.25
+  #define  DEFAULT_Kp 37.28
+  #define  DEFAULT_Ki 5.40
+  #define  DEFAULT_Kd 63
 
 // RepRapPro Huxley
 //  #define  DEFAULT_Kp 3.0
@@ -314,7 +314,7 @@ const bool Z_ENDSTOPS_INVERTING = false; // set to true to invert the logic of t
 #define INVERT_X_DIR false    // 
 #define INVERT_Y_DIR true    // 
 #define INVERT_Z_DIR false     // 
-#define INVERT_E0_DIR true   // false if placed left true if placed right
+#define INVERT_E0_DIR false   // EXTRUDER : "false" if placed LEFT / "true" if placed RIGHT
 #define INVERT_E1_DIR false    // 
 #define INVERT_E2_DIR false   // 
 
@@ -327,7 +327,7 @@ const bool Z_ENDSTOPS_INVERTING = false; // set to true to invert the logic of t
 #define min_software_endstops false // If true, axis won't move to coordinates less than HOME_POS.
 #define max_software_endstops true  // If true, axis won't move to coordinates greater than the defined lengths below.
 // Travel limits after homing
-#define X_MAX_POS 160
+#define X_MAX_POS 140
 #define X_MIN_POS 0
 #define Y_MAX_POS 140
 #define Y_MIN_POS 0
@@ -356,7 +356,7 @@ const bool Z_ENDSTOPS_INVERTING = false; // set to true to invert the logic of t
 // default settings
 
 #define DEFAULT_AXIS_STEPS_PER_UNIT   {162, 161, 8000, 280}  // 
-#define DEFAULT_MAX_FEEDRATE          {400, 400, 2, 50}    // (mm/sec)
+#define DEFAULT_MAX_FEEDRATE          {300, 300, 2, 50}    // (mm/sec)
 #define DEFAULT_MAX_ACCELERATION      {6000, 6000, 40, 10000}    // X, Y, Z, E maximum start speed for accelerated moves. E default values are good for skeinforge 40+, for older versions raise them a lot.
 
 #define DEFAULT_ACCELERATION          1500    // X, Y, Z and E max acceleration in mm/s^2 for printing moves
@@ -369,7 +369,7 @@ const bool Z_ENDSTOPS_INVERTING = false; // set to true to invert the logic of t
 // #define EXTRUDER_OFFSET_Y {0.0, 5.00}  // (in mm) for each extruder, offset of the hotend on the Y axis
 
 // The speed change that does not require acceleration (i.e. the software might assume it can be done instantaneously)
-#define DEFAULT_XYJERK                20.0    // (mm/sec)
+#define DEFAULT_XYJERK                15.0    // (mm/sec)
 #define DEFAULT_ZJERK                 0.4     // (mm/sec)
 #define DEFAULT_EJERK                 5.0    // (mm/sec)
 
