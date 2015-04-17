@@ -143,7 +143,7 @@
 #define MAX_REDUNDANT_TEMP_SENSOR_DIFF 10
 
 // Actual temperature must be close to target for this long before M109 returns success
-#define TEMP_RESIDENCY_TIME 10  // (seconds)
+#define TEMP_RESIDENCY_TIME 5  // (seconds)
 #define TEMP_HYSTERESIS 3       // (degC) range of +/- temperatures considered "close" to the target one
 #define TEMP_WINDOW     1       // (degC) Window around target to start the residency timer x degC early.
 
@@ -185,14 +185,14 @@
 //PID autotune = M303 Sxxx
 // If you are using a preconfigured hotend then you can use one of the value sets by uncommenting it
 // FoldaRap
-  #define  DEFAULT_Kp 37.28
-  #define  DEFAULT_Ki 5.40
-  #define  DEFAULT_Kd 63
+  #define  DEFAULT_Kp 12
+  #define  DEFAULT_Ki 1
+  #define  DEFAULT_Kd 40
 
-// RepRapPro Huxley
-//  #define  DEFAULT_Kp 3.0
-//  #define  DEFAULT_Ki (2*PID_dT)
-//  #define  DEFAULT_Kd (80/PID_dT)
+// MONDRIAN
+//  #define  DEFAULT_Kp 15
+//  #define  DEFAULT_Ki 1
+//  #define  DEFAULT_Kd 45
 
 // Ultimaker
 //    #define  DEFAULT_Kp 22.2
@@ -204,10 +204,6 @@
 //    #define  DEFAULT_Ki 0.1
 //    #define  DEFAULT_Kd 12
 
-// Mendel Parts V9 on 12V
-//    #define  DEFAULT_Kp 63.0
-//    #define  DEFAULT_Ki 2.25
-//    #define  DEFAULT_Kd 440
 #endif // PIDTEMP
 
 // Bed Temperature Control
@@ -314,7 +310,7 @@ const bool Z_ENDSTOPS_INVERTING = false; // set to true to invert the logic of t
 #define INVERT_X_DIR false    // 
 #define INVERT_Y_DIR true    // 
 #define INVERT_Z_DIR false     // 
-#define INVERT_E0_DIR true   // false if placed left true if placed right
+#define INVERT_E0_DIR false   // false if placed left true if placed right
 #define INVERT_E1_DIR false    // 
 #define INVERT_E2_DIR false   // 
 
@@ -327,9 +323,9 @@ const bool Z_ENDSTOPS_INVERTING = false; // set to true to invert the logic of t
 #define min_software_endstops false // If true, axis won't move to coordinates less than HOME_POS.
 #define max_software_endstops true  // If true, axis won't move to coordinates greater than the defined lengths below.
 // Travel limits after homing
-#define X_MAX_POS 140
+#define X_MAX_POS 142
 #define X_MIN_POS 0
-#define Y_MAX_POS 140
+#define Y_MAX_POS 142
 #define Y_MIN_POS 0
 #define Z_MAX_POS 150
 #define Z_MIN_POS 0
