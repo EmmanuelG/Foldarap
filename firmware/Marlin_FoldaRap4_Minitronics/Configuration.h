@@ -310,7 +310,7 @@ const bool Z_ENDSTOPS_INVERTING = true; // set to true to invert the logic of th
 #define INVERT_X_DIR false    // 
 #define INVERT_Y_DIR true    // 
 #define INVERT_Z_DIR true     // 
-#define INVERT_E0_DIR false   // false if placed left true if placed right
+#define INVERT_E0_DIR true   // false if placed left true if placed right
 #define INVERT_E1_DIR false    // 
 #define INVERT_E2_DIR false   // 
 
