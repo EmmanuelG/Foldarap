@@ -1,5 +1,1 @@
-**FoldaRap, The Folding RepRap**
-
-For instructions, see the [RepRap wiki](http://reprap.org/wiki/FoldaRap) :)
-
-The master branch is now about the FoldaRap 3.0 dev (printed Y sliders)
+Moving to the OpenEdge repo [here](https://github.com/OpenEdge) :)
