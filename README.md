@@ -1,1 +1,0 @@
-Moving to the OpenEdge repo [here](https://github.com/OpenEdge) :)
