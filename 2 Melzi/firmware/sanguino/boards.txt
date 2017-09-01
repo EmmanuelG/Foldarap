@@ -1,0 +1,22 @@
+##############################################################
+
+atmega1284.name=Melzi 1284p 16mhz
+
+atmega1284.upload.protocol=stk500v1
+atmega1284.upload.maximum_size=129024
+atmega1284.upload.speed=57600
+
+atmega1284.bootloader.low_fuses=0xd6
+atmega1284.bootloader.high_fuses=0xdc
+atmega1284.bootloader.extended_fuses=0xfd
+atmega1284.bootloader.path=atmega
+atmega1284.bootloader.file=ATmegaBOOT_1284P.hex
+atmega1284.bootloader.unlock_bits=0x3F
+atmega1284.bootloader.lock_bits=0x0F
+
+atmega1284.build.mcu=atmega1284p
+atmega1284.build.f_cpu=16000000L
+atmega1284.build.core=arduino
+atmega1284.build.variant=standard
+
+#
