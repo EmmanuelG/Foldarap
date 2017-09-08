@@ -1,1 +1,1 @@
-Moved to the OpenEdge repo [here](https://github.com/OpenEdge/FoldaRap2.5)
+Latest stable release
