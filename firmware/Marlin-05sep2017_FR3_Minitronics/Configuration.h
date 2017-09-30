@@ -335,12 +335,12 @@ const bool Z_MAX_ENDSTOP_INVERTING = false; // set to true to invert the logic o
 #define DISABLE_E false // For all extruders
 #define DISABLE_INACTIVE_EXTRUDER true //disable only inactive extruders and keep active extruder enabled
 
-#define INVERT_X_DIR false    // for Mendel set to false, for Orca set to true
-#define INVERT_Y_DIR false    // for Mendel set to true, for Orca set to false
-#define INVERT_Z_DIR false     // for Mendel set to false, for Orca set to true
-#define INVERT_E0_DIR false   // for direct drive extruder v9 set to true, for geared extruder set to false
-#define INVERT_E1_DIR false    // for direct drive extruder v9 set to true, for geared extruder set to false
-#define INVERT_E2_DIR false   // for direct drive extruder v9 set to true, for geared extruder set to false
+#define INVERT_X_DIR true // false pour courroie, true pour crémaillère
+#define INVERT_Y_DIR false
+#define INVERT_Z_DIR false
+#define INVERT_E0_DIR false
+#define INVERT_E1_DIR false
+#define INVERT_E2_DIR false
 
 // ENDSTOP SETTINGS:
 // Sets direction of endstops when homing; 1=MAX, -1=MIN
@@ -497,7 +497,7 @@ const bool Z_MAX_ENDSTOP_INVERTING = false; // set to true to invert the logic o
 
 // default settings
 
-#define DEFAULT_AXIS_STEPS_PER_UNIT   {160.5, 161, 161, 280}  // default steps per unit
+#define DEFAULT_AXIS_STEPS_PER_UNIT   {152.75, 161, 161, 280}  // default steps per unit , 161 courroies , 280 pignon maritim-model , X= 160.5 (courroie) ou 152.75 (crémaillère)
 #define DEFAULT_MAX_FEEDRATE          {120, 120, 120, 50}    // (mm/sec)
 #define DEFAULT_MAX_ACCELERATION      {3000, 3000, 1000, 9000}    // X, Y, Z, E maximum start speed for accelerated moves. E default values are good for Skeinforge 40+, for older versions raise them a lot.
 
