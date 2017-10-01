@@ -497,7 +497,7 @@ const bool Z_MAX_ENDSTOP_INVERTING = false; // set to true to invert the logic o
 
 // default settings
 
-#define DEFAULT_AXIS_STEPS_PER_UNIT   {152.75, 161, 161, 280}  // default steps per unit , 161 courroies , 280 pignon maritim-model , X= 160.5 (courroie) ou 152.75 (crémaillère)
+#define DEFAULT_AXIS_STEPS_PER_UNIT   {152.60, 160.80, 161, 280}  // default steps per unit , 161 courroies , 280 pignon maritim-model , X= 160.5 (courroie) ou 152.50 (crémaillère)
 #define DEFAULT_MAX_FEEDRATE          {120, 120, 120, 50}    // (mm/sec)
 #define DEFAULT_MAX_ACCELERATION      {3000, 3000, 1000, 9000}    // X, Y, Z, E maximum start speed for accelerated moves. E default values are good for Skeinforge 40+, for older versions raise them a lot.
 
