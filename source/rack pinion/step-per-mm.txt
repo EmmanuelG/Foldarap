@@ -1,0 +1,1 @@
+between 152 and 153 step-per-mm with 1/32 microstepping
