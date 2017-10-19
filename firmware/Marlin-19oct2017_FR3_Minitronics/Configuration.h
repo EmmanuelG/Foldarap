@@ -318,7 +318,7 @@ const bool Z_MAX_ENDSTOP_INVERTING = false; // set to true to invert the logic o
 
 #define INVERT_X_DIR true // false pour courroie, true pour crémaillère
 #define INVERT_Y_DIR false
-#define INVERT_Z_DIR false
+#define INVERT_Z_DIR true // false pour courroie, true pour crémaillère
 #define INVERT_E0_DIR false
 #define INVERT_E1_DIR false
 #define INVERT_E2_DIR false
@@ -337,7 +337,7 @@ const bool Z_MAX_ENDSTOP_INVERTING = false; // set to true to invert the logic o
 #define X_MIN_POS 0
 #define Y_MAX_POS 150
 #define Y_MIN_POS 0
-#define Z_MAX_POS 150
+#define Z_MAX_POS 142
 #define Z_MIN_POS 0
 
 #define X_MAX_LENGTH (X_MAX_POS - X_MIN_POS)
@@ -482,8 +482,9 @@ const bool Z_MAX_ENDSTOP_INVERTING = false; // set to true to invert the logic o
 // crémaillères : 152-153
 // E pignon maritim model + OEV2 + buse 0.5mm : 280
 // E pignon maritim model + e3Dlite6 + buse 0.4mm : 290
+// E pignon maritim model + e3Dlite6 + buse 0.5mm : 290
 
-#define DEFAULT_AXIS_STEPS_PER_UNIT   {152.60, 160.80, 161, 290}  // default steps per unit
+#define DEFAULT_AXIS_STEPS_PER_UNIT   {152.60, 160.75, 152.50, 290}  // default steps per unit
 #define DEFAULT_MAX_FEEDRATE          {120, 120, 120, 50}    // (mm/sec)
 #define DEFAULT_MAX_ACCELERATION      {3000, 3000, 1000, 9000}    // X, Y, Z, E maximum start speed for accelerated moves. E default values are good for Skeinforge 40+, for older versions raise them a lot.
 
