@@ -28,7 +28,7 @@
 //#define STRING_VERSION "1.0.2"
 
 #define STRING_VERSION_CONFIG_H __DATE__ " " __TIME__ // build date and time
-#define STRING_CONFIG_H_AUTHOR "(Emmanuel, FoldaRap 3.0 Minitronics)" // Who made the changes.
+#define STRING_CONFIG_H_AUTHOR "(Emmanuel, FoldaRap 3.5 Minitronics)" // Who made the changes.
 
 // SERIAL_PORT selects which serial port should be used for communication with the host.
 // This allows the connection of wireless adapters (for instance) to non-default port pins.
@@ -484,11 +484,11 @@ const bool Z_MAX_ENDSTOP_INVERTING = false; // set to true to invert the logic o
 // E pignon maritim model + e3Dlite6 + buse 0.4mm : 290
 // E pignon maritim model + e3Dlite6 + buse 0.5mm : 290
 
-#define DEFAULT_AXIS_STEPS_PER_UNIT   {152.60, 160.80, 152.50, 290}  // default steps per unit
+#define DEFAULT_AXIS_STEPS_PER_UNIT   {152.75, 160.80, 152.50, 290}  // default steps per unit
 #define DEFAULT_MAX_FEEDRATE          {120, 120, 120, 50}    // (mm/sec)
-#define DEFAULT_MAX_ACCELERATION      {3000, 3000, 1000, 9000}    // X, Y, Z, E maximum start speed for accelerated moves. E default values are good for Skeinforge 40+, for older versions raise them a lot.
+#define DEFAULT_MAX_ACCELERATION      {1200, 1200, 1000, 9000}    // X, Y, Z, E maximum start speed for accelerated moves. E default values are good for Skeinforge 40+, for older versions raise them a lot.
 
-#define DEFAULT_ACCELERATION          1500    // X, Y, Z and E max acceleration in mm/s^2 for printing moves
+#define DEFAULT_ACCELERATION          1200    // X, Y, Z and E max acceleration in mm/s^2 for printing moves
 #define DEFAULT_RETRACT_ACCELERATION  3000   // X, Y, Z and E max acceleration in mm/s^2 for retracts
 
 // Offset of the extruders (uncomment if using more than one and relying on firmware to position when changing).
