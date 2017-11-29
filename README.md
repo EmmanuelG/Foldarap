@@ -1,7 +1,8 @@
 FoldaRap, The Folding RepRap
 ============================
 
-**Version 3.0 : in progress, support it via [LiberaPay](https://liberapay.com/EmmanuelG/?lang=en) (open-source Patreon)**
+**Version 3.5 : in progress, support it via [LiberaPay](https://liberapay.com/EmmanuelG/?lang=en) (open-source Patreon)**
+
 (bringing an easier folding/unfolding mechanism and a whole redesign)
 
 [Version 2.5](https://github.com/EmmanuelG/Foldarap/tree/FoldaRap-2.5) : released 21-jul-2015
