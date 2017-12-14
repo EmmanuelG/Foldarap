@@ -14,6 +14,7 @@ My adventures/travels with it gave birth to [OpenEdge](https://openedge.cc), whi
 
 Since summer 2017 I'm back to my roots, working again on this nice little machine.
 
+While trying to explore alternative business-models : micro-donations for the design/documentation rather than selling hardware.
 
 Donations accepted via [LiberaPay](https://liberapay.com/EmmanuelG/?lang=en) :-)
 
