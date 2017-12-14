@@ -3,6 +3,8 @@ FoldaRap, The Folding RepRap
 
 **Version 3.5 : in progress, support it via [LiberaPay](https://liberapay.com/EmmanuelG/?lang=en) (open-source Patreon)**
 
+![FoldaRap 3.5 color scheme](https://github.com/EmmanuelG/Foldarap/blob/master/Folda3.5-color.jpg "FoldaRap 3.5 Color Scheme")
+
 [Version 3.0](https://github.com/EmmanuelG/Foldarap/tree/FoldaRap-3.0) : released 13-oct-2017
 (bringing an easier folding/unfolding mechanism and a whole redesign)
 
