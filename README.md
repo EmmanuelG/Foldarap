@@ -18,9 +18,9 @@ While trying to explore alternative business-models : micro-donations for the de
 
 Donations accepted via [LiberaPay](https://liberapay.com/EmmanuelG/?lang=en) :-)
 
-**Version 4.0 : in progress**
-
 ![FoldaRap 4.0 color scheme](https://github.com/EmmanuelG/Foldarap/blob/master/Folda3.5-color.jpg "FoldaRap 4.0 Color Scheme")
+
+[Version 3.5](https://github.com/EmmanuelG/Foldarap/tree/FoldaRap-3.5) : released xx-dec-2017
 
 [Version 3.0](https://github.com/EmmanuelG/Foldarap/tree/FoldaRap-3.0) : released 13-oct-2017
 Bringing an easier folding/unfolding mechanism and a whole redesign.
