@@ -28,7 +28,7 @@
 //#define STRING_VERSION "1.0.2"
 
 #define STRING_VERSION_CONFIG_H __DATE__ " " __TIME__ // build date and time
-#define STRING_CONFIG_H_AUTHOR "(Emmanuel, FoldaRap 3.5 Minitronics)" // Who made the changes.
+#define STRING_CONFIG_H_AUTHOR "(Emmanuel, FoldaRap 4.0 Minitronics)" // Who made the changes.
 
 // SERIAL_PORT selects which serial port should be used for communication with the host.
 // This allows the connection of wireless adapters (for instance) to non-default port pins.
@@ -317,7 +317,7 @@ const bool Z_MAX_ENDSTOP_INVERTING = false; // set to true to invert the logic o
 #define DISABLE_INACTIVE_EXTRUDER true //disable only inactive extruders and keep active extruder enabled
 
 #define INVERT_X_DIR true // false pour courroie, true pour crémaillère
-#define INVERT_Y_DIR false
+#define INVERT_Y_DIR true // false pour LDO motor, true pour Robotdigg
 #define INVERT_Z_DIR true // false pour courroie, true pour crémaillère
 #define INVERT_E0_DIR false
 #define INVERT_E1_DIR false
@@ -335,7 +335,7 @@ const bool Z_MAX_ENDSTOP_INVERTING = false; // set to true to invert the logic o
 // Travel limits after homing
 #define X_MAX_POS 142
 #define X_MIN_POS 0
-#define Y_MAX_POS 150
+#define Y_MAX_POS 145
 #define Y_MIN_POS 0
 #define Z_MAX_POS 142
 #define Z_MIN_POS 0
