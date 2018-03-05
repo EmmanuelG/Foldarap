@@ -317,7 +317,7 @@ const bool Z_MAX_ENDSTOP_INVERTING = false; // set to true to invert the logic o
 #define DISABLE_INACTIVE_EXTRUDER true //disable only inactive extruders and keep active extruder enabled
 
 #define INVERT_X_DIR true // false pour courroie, true pour crémaillère
-#define INVERT_Y_DIR true // false pour LDO motor, true pour Robotdigg
+#define INVERT_Y_DIR false // false pour LDO motor, true pour Robotdigg
 #define INVERT_Z_DIR true // false pour courroie, true pour crémaillère
 #define INVERT_E0_DIR false
 #define INVERT_E1_DIR false
