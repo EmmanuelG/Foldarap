@@ -105,7 +105,7 @@
 // 147 is Pt100 with 4k7 pullup
 // 110 is Pt100 with 1k pullup (non standard)
 
-#define TEMP_SENSOR_0 5 // 5 for e3D 111 for OpenEdge
+#define TEMP_SENSOR_0 5 // 5 for e3D or 111 for OpenEdge
 #define TEMP_SENSOR_1 0
 #define TEMP_SENSOR_2 0
 #define TEMP_SENSOR_BED 1
