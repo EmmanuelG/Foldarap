@@ -328,8 +328,8 @@
  * details can be tuned in Configuration_adv.h
  */
 
-#define THERMAL_PROTECTION_HOTENDS // Enable thermal protection for all extruders
-#define THERMAL_PROTECTION_BED     // Enable thermal protection for the heated bed
+//#define THERMAL_PROTECTION_HOTENDS // Enable thermal protection for all extruders
+//#define THERMAL_PROTECTION_BED     // Enable thermal protection for the heated bed
 
 //===========================================================================
 //============================= Mechanical Settings =========================
@@ -683,8 +683,11 @@ const bool Z_MIN_PROBE_ENDSTOP_INVERTING = false; // set to true to invert the l
 // E pignon maritim model + OEV2 + buse 0.5mm : 280
 // E pignon maritim model + e3Dlite6 + buse 0.4mm : 290
 // E pignon maritim model + e3Dlite6 + buse 0.5mm : 290
+// E pignon hobb-gobelin e3D + e3Dlite6 + buse 0.4mm : ???
+// E pignon hobb-gobelin e3D + e3Dlite6 + buse 0.5mm : 280
+// E pignon hobb-gobelin e3D + e3Dlite6 + buse 0.8mm : 280
 
-#define DEFAULT_AXIS_STEPS_PER_UNIT   {152.75, 160.70, 152.50, 290}  // default steps per unit for Ultimaker
+#define DEFAULT_AXIS_STEPS_PER_UNIT   {152.75, 160.80, 152.50, 280}  // steps per unit X, Y, Z, E
 #define DEFAULT_MAX_FEEDRATE          {120, 120, 120, 50}    // (mm/sec)
 #define DEFAULT_MAX_ACCELERATION      {1200, 1200, 1000, 9000}    // X, Y, Z, E maximum start speed for accelerated moves. E default values are good for Skeinforge 40+, for older versions raise them a lot.
 
