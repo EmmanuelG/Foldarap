@@ -10,21 +10,18 @@ More on the RepRap Wiki [FoldaRap's page](http://reprap.org/wiki/FoldaRap)
 
 Lots of pictures/videos on [flickr](http://www.flickr.com/photos/watsdesign/tags/foldarap/)
 
-My adventures/travels with it gave birth to [OpenEdge](https://openedge.cc), which grew to make even more FoldaRap and Mondrian, then moved toward the industry/education with customs Alto and the HD/HD-E...
+My adventures/travels with it gave birth to [OpenEdge](https://openedge.cc), which grew to make even more FoldaRap and Mondrian, then moved toward the industry/education with customs Alto and the HD/HD-E.
 
-Since summer 2017 I'm back to my roots, working again on this nice little machine.
+During the summer 2017 I went back working in FabLabs, but found time to update the FoldaRap with ideas waiting for implementation.
+I also started a [LiberaPay](https://liberapay.com/EmmanuelG/?lang=en) account to explore alternative business-models : micro-donations for the design/documentation rather than selling hardware.
 
-While trying to explore alternative business-models : micro-donations for the design/documentation rather than selling hardware.
-
-Donations accepted via [LiberaPay](https://liberapay.com/EmmanuelG/?lang=en) :-)
-
-**Version 4.0 : in progress**
+**Version 4.0** (released winter 2017)
 
 ![FoldaRap 4.0 color scheme](https://github.com/EmmanuelG/Foldarap/blob/master/Folda3.5-color.jpg "FoldaRap 4.0 Color Scheme")
 
-[Version 3.5](https://github.com/EmmanuelG/Foldarap/tree/FoldaRap-3.5) : released xx-dec-2017
+[Version 3.5](https://github.com/EmmanuelG/Foldarap/tree/FoldaRap-3.5) : released autumn 2017
 
-[Version 3.0](https://github.com/EmmanuelG/Foldarap/tree/FoldaRap-3.0) : released 13-oct-2017
+[Version 3.0](https://github.com/EmmanuelG/Foldarap/tree/FoldaRap-3.0) : released summer 2017
 Bringing an easier folding/unfolding mechanism and a whole redesign.
 
-[Version 2.5](https://github.com/EmmanuelG/Foldarap/tree/FoldaRap-2.5) : released 21-jul-2015
+[Version 2.5](https://github.com/EmmanuelG/Foldarap/tree/FoldaRap-2.5) : released summer 2015
