@@ -25,3 +25,5 @@ I also started a [LiberaPay](https://liberapay.com/EmmanuelG/?lang=en) account t
 Bringing an easier folding/unfolding mechanism and a whole redesign.
 
 [Version 2.5](https://github.com/EmmanuelG/Foldarap/tree/FoldaRap-2.5) : released summer 2015
+
+Version 1.0 : released summer 2012
