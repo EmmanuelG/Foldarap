@@ -687,7 +687,8 @@ const bool Z_MIN_PROBE_ENDSTOP_INVERTING = false; // set to true to invert the l
 // E pignon hobb-gobelin e3D + e3Dlite6 + buse 0.5mm : 280
 // E pignon hobb-gobelin e3D + e3Dlite6 + buse 0.8mm : 280
 
-#define DEFAULT_AXIS_STEPS_PER_UNIT   {152.75, 160.80, 152.50, 280}  // steps per unit X, Y, Z, E
+#define DEFAULT_AXIS_STEPS_PER_UNIT   {152.75, 160.80, 152.50, 280}  // steps per unit X, Y, Z, E with nema17 1.8°/step
+//#define DEFAULT_AXIS_STEPS_PER_UNIT   {152.75, 160.80, 305, 280}  // steps per unit X, Y, Z, E with nema17 0.9°/step for Z
 #define DEFAULT_MAX_FEEDRATE          {120, 120, 120, 50}    // (mm/sec)
 #define DEFAULT_MAX_ACCELERATION      {1200, 1200, 1000, 9000}    // X, Y, Z, E maximum start speed for accelerated moves. E default values are good for Skeinforge 40+, for older versions raise them a lot.
 
