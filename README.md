@@ -17,7 +17,7 @@ I also started a [LiberaPay](https://liberapay.com/EmmanuelG/?lang=en) account t
 
 **Version 4.0** (released winter 2017)
 
-![FoldaRap 4.0 color scheme](https://github.com/EmmanuelG/Foldarap/blob/master/Folda3.5-color.jpg "FoldaRap 4.0 Color Scheme")
+![FoldaRap 4.0 color scheme](https://github.com/EmmanuelG/Foldarap/blob/master/Folda4.0-color.jpg "FoldaRap 4.0 Color Scheme")
 
 [Version 3.5](https://github.com/EmmanuelG/Foldarap/tree/FoldaRap-3.5) : released autumn 2017
 
